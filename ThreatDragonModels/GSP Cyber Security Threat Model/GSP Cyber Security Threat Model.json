@@ -1,2443 +1,1231 @@
 {
-
-"version": "2.0.3",
-
-"summary": {
-
-"title": "GSP Cyber Security Threat Model",
-
-"owner": "Rakkhi Samarasekera",
-
-"description": "https://apamscloud.sharepoint.com/sites/GridServicesFramework-InformationTechnology-TechnologyWorkstream-APAonly/Shared%20Documents/Technology%20Workstream%20-%20APA%20hires%20only/Architecture/GSP%20Future%20State%20Concept%20Architecture(for%20feedback).pptx?d=w4e302fcbc43541449b89044512b7279a&nav=eyJzSWQiOjI1NywiY0lkIjo3ODIwMjMzNjgsImNvbW1lbnRJZCI6IjczRThERjRDLTBDRTktNERGRC04Q0JCLURGODExMkZEQzM1QiJ9&ne=ew0KICAidnQiOiB7DQogICAgImIiOiA1ODk4DQogIH0NCn0&e=F9wouMg2U0iGAdz-nphubA&at=16",
-
-"id": 0
-
-},
-
-"detail": {
-
-"contributors": [],
-
-"diagrams": [
-
-{
-
-"id": 0,
-
-"title": "GSP Cyber Security Threat Model STRIDE",
-
-"diagramType": "STRIDE",
-
-"placeholder": "New STRIDE diagram description",
-
-"thumbnail": "./public/content/images/thumbnail.stride.jpg",
-
-"version": "2.0.3",
-
-"description": "Stride framework to perform threat model of GSP",
-
-"cells": [
-
-{
-
-"position": {
-
-"x": 289.9999999999998,
-
-"y": 177.03125000000063
-
-},
-
-"size": {
-
-"width": 1237.3333333333328,
-
-"height": 580
-
-},
-
-"shape": "trust-boundary-box",
-
-"attrs": {
-
-"headerText": {
-
-"text": "Energy Components System"
-
-}
-
-},
-
-"zIndex": -1,
-
-"id": "ccdc2c29-a7d0-46d3-983a-6000bdf27a27",
-
-"data": {
-
-"type": "tm.BoundaryBox",
-
-"name": "Energy Components System",
-
-"description": "All application and infrastructure components that make up Energy Components (EC). Gas accounting, contract record, gas nomination and invoicing system for APA",
-
-"isTrustBoundary": true,
-
-"hasOpenThreats": false
-
-}
-
-},
-
-{
-
-"position": {
-
-"x": 335.0000000000002,
-
-"y": 248.28124999999966
-
-},
-
-"size": {
-
-"width": 590,
-
-"height": 276.5625
-
-},
-
-"shape": "trust-boundary-box",
-
-"attrs": {
-
-"headerText": {
-
-"text": "EC Application"
-
-}
-
-},
-
-"id": "b1e1a6b5-c283-4ce2-b180-7742c45c0410",
-
-"zIndex": -1,
-
-"data": {
-
-"type": "tm.BoundaryBox",
-
-"name": "EC Application",
-
-"description": "EC application layer",
-
-"isTrustBoundary": true,
-
-"hasOpenThreats": false
-
-}
-
-},
-
-{
-
-"position": {
-
-"x": 960,
-
-"y": 248.28124999999966
-
-},
-
-"size": {
-
-"width": 310,
-
-"height": 145.3125
-
-},
-
-"shape": "trust-boundary-box",
-
-"attrs": {
-
-"headerText": {
-
-"text": "EC data layer"
-
-}
-
-},
-
-"id": "8be5e768-748f-4848-9286-4b1a4a856e6c",
-
-"zIndex": -1,
-
-"data": {
-
-"type": "tm.BoundaryBox",
-
-"name": "EC data layer",
-
-"description": "",
-
-"isTrustBoundary": true,
-
-"hasOpenThreats": false
-
-}
-
-},
-
-{
-
-"position": {
-
-"x": 959.9999999999998,
-
-"y": 424.84374999999966
-
-},
-
-"size": {
-
-"width": 520,
-
-"height": 243.75
-
-},
-
-"shape": "trust-boundary-box",
-
-"attrs": {
-
-"headerText": {
-
-"text": "EC AWS Native Components"
-
-}
-
-},
-
-"id": "b6b24bb6-0d7d-4d94-bbe5-992b65de0317",
-
-"zIndex": -1,
-
-"data": {
-
-"type": "tm.BoundaryBox",
-
-"name": "EC AWS Native Components",
-
-"description": "",
-
-"isTrustBoundary": true,
-
-"hasOpenThreats": false
-
-}
-
-},
-
-{
-
-"position": {
-
-"x": 289.999999999999,
-
-"y": 870.0000000000039
-
-},
-
-"size": {
-
-"width": 600,
-
-"height": 281.25
-
-},
-
-"shape": "trust-boundary-box",
-
-"attrs": {
-
-"headerText": {
-
-"text": "Keycloak components"
-
-}
-
-},
-
-"id": "a9a7833f-81d1-4387-a0fc-375c8e608b4c",
-
-"zIndex": -1,
-
-"data": {
-
-"type": "tm.BoundaryBox",
-
-"name": "Keycloak components",
-
-"description": "Open source component providing integration with Azure AD for EC",
-
-"isTrustBoundary": true,
-
-"hasOpenThreats": false
-
-}
-
-},
-
-{
-
-"position": {
-
-"x": 289.9999999999998,
-
-"y": -30.624999999998863
-
-},
-
-"size": {
-
-"width": 300,
-
-"height": 140.62499999999997
-
-},
-
-"shape": "trust-boundary-box",
-
-"attrs": {
-
-"headerText": {
-
-"text": "APA AWS Organization"
-
-}
-
-},
-
-"id": "ef2749f3-a694-4969-baa0-2542e9f2af90",
-
-"zIndex": -1,
-
-"data": {
-
-"type": "tm.BoundaryBox",
-
-"name": "APA AWS Organization",
-
-"description": "",
-
-"isTrustBoundary": true,
-
-"hasOpenThreats": false
-
-}
-
-},
-
-{
-
-"position": {
-
-"x": 657.9999999999999,
-
-"y": -29.999999999999176
-
-},
-
-"size": {
-
-"width": 300,
-
-"height": 140.625
-
-},
-
-"shape": "trust-boundary-box",
-
-"attrs": {
-
-"headerText": {
-
-"text": "APA Azure Subscriptions"
-
-}
-
-},
-
-"id": "a6d9475a-0529-4e88-8a09-66b9ba9ade5a",
-
-"zIndex": -1,
-
-"data": {
-
-"type": "tm.BoundaryBox",
-
-"name": "APA Azure Subscriptions",
-
-"description": "",
-
-"isTrustBoundary": true,
-
-"hasOpenThreats": false
-
-}
-
-},
-
-{
-
-"position": {
-
-"x": 383.00000000000045,
-
-"y": 284.8437499999993
-
-},
-
-"size": {
-
-"width": 120,
-
-"height": 60
-
-},
-
-"attrs": {
-
-"text": {
-
-"text": "EC Application"
-
-},
-
-"topLine": {
-
-"strokeWidth": 1,
-
-"strokeDasharray": null
-
-},
-
-"bottomLine": {
-
-"strokeWidth": 1,
-
-"strokeDasharray": null
-
-}
-
-},
-
-"visible": true,
-
-"shape": "store",
-
-"id": "99257602-6c1f-4b81-b1a0-b23b925ab861",
-
-"zIndex": 0,
-
-"data": {
-
-"type": "tm.Store",
-
-"name": "EC Application",
-
-"description": "The actual EC application",
-
-"outOfScope": false,
-
-"reasonOutOfScope": "",
-
-"isALog": false,
-
-"storesCredentials": false,
-
-"isEncrypted": false,
-
-"isSigned": false,
-
-"hasOpenThreats": false,
-
-"threats": []
-
-}
-
-},
-
-{
-
-"position": {
-
-"x": 383.00000000000045,
-
-"y": 364.8437499999993
-
-},
-
-"size": {
-
-"width": 120,
-
-"height": 60
-
-},
-
-"attrs": {
-
-"text": {
-
-"text": "EC Containers"
-
-},
-
-"topLine": {
-
-"strokeWidth": 1,
-
-"strokeDasharray": null
-
-},
-
-"bottomLine": {
-
-"strokeWidth": 1,
-
-"strokeDasharray": null
-
-}
-
-},
-
-"visible": true,
-
-"shape": "store",
-
-"id": "e181480c-4bac-412a-954b-e79475bc400a",
-
-"zIndex": 1,
-
-"data": {
-
-"type": "tm.Store",
-
-"name": "EC Containers",
-
-"description": "Application servers containers",
-
-"outOfScope": false,
-
-"reasonOutOfScope": "",
-
-"isALog": false,
-
-"storesCredentials": false,
-
-"isEncrypted": false,
-
-"isSigned": false,
-
-"hasOpenThreats": false,
-
-"threats": []
-
-}
-
-},
-
-{
-
-"position": {
-
-"x": 383.00000000000045,
-
-"y": 444.8437499999993
-
-},
-
-"size": {
-
-"width": 120,
-
-"height": 60
-
-},
-
-"attrs": {
-
-"text": {
-
-"text": "EC K8s"
-
-},
-
-"topLine": {
-
-"strokeWidth": 1,
-
-"strokeDasharray": null
-
-},
-
-"bottomLine": {
-
-"strokeWidth": 1,
-
-"strokeDasharray": null
-
-}
-
-},
-
-"visible": true,
-
-"shape": "store",
-
-"id": "93d6ce30-7459-4cb6-9ed0-dae3b848022f",
-
-"zIndex": 2,
-
-"data": {
-
-"type": "tm.Store",
-
-"name": "EC K8s",
-
-"description": "EC Kubernetes cluster for hosting containers for EC application",
-
-"outOfScope": false,
-
-"reasonOutOfScope": "",
-
-"isALog": false,
-
-"storesCredentials": false,
-
-"isEncrypted": false,
-
-"isSigned": false,
-
-"hasOpenThreats": false,
-
-"threats": []
-
-}
-
-},
-
-{
-
-"position": {
-
-"x": 314.99999999999966,
-
-"y": 30
-
-},
-
-"size": {
-
-"width": 120,
-
-"height": 60
-
-},
-
-"attrs": {
-
-"text": {
-
-"text": "GSP AWS Accounts"
-
-},
-
-"topLine": {
-
-"strokeWidth": 1,
-
-"strokeDasharray": null
-
-},
-
-"bottomLine": {
-
-"strokeWidth": 1,
-
-"strokeDasharray": null
-
-}
-
-},
-
-"visible": true,
-
-"shape": "store",
-
-"id": "e3c26ee8-46b4-4387-ae7a-29d99925d3ef",
-
-"zIndex": 3,
-
-"data": {
-
-"type": "tm.Store",
-
-"name": "GSP AWS Accounts",
-
-"description": "AWS accounts hosting all GSP components",
-
-"outOfScope": false,
-
-"reasonOutOfScope": "",
-
-"isALog": false,
-
-"storesCredentials": false,
-
-"isEncrypted": false,
-
-"isSigned": false,
-
-"hasOpenThreats": false,
-
-"threats": []
-
-}
-
-},
-
-{
-
-"position": {
-
-"x": 990,
-
-"y": 304.8437499999993
-
-},
-
-"size": {
-
-"width": 120,
-
-"height": 60
-
-},
-
-"attrs": {
-
-"text": {
-
-"text": "EC RDS DB"
-
-},
-
-"topLine": {
-
-"strokeWidth": 1,
-
-"strokeDasharray": null
-
-},
-
-"bottomLine": {
-
-"strokeWidth": 1,
-
-"strokeDasharray": null
-
-}
-
-},
-
-"visible": true,
-
-"shape": "store",
-
-"id": "af9fa3e6-cc15-4905-9c9f-e627f46326c0",
-
-"zIndex": 4,
-
-"data": {
-
-"type": "tm.Store",
-
-"name": "EC RDS DB",
-
-"description": "EC Oracle RDS database. EC data layer",
-
-"outOfScope": false,
-
-"reasonOutOfScope": "",
-
-"isALog": false,
-
-"storesCredentials": true,
-
-"isEncrypted": true,
-
-"isSigned": false,
-
-"hasOpenThreats": false,
-
-"threats": []
-
-}
-
-},
-
-{
-
-"position": {
-
-"x": 565.0000000000005,
-
-"y": 284.8437499999993
-
-},
-
-"size": {
-
-"width": 120,
-
-"height": 60
-
-},
-
-"attrs": {
-
-"text": {
-
-"text": "EC EBS Volumes"
-
-},
-
-"topLine": {
-
-"strokeWidth": 1,
-
-"strokeDasharray": null
-
-},
-
-"bottomLine": {
-
-"strokeWidth": 1,
-
-"strokeDasharray": null
-
-}
-
-},
-
-"visible": true,
-
-"shape": "store",
-
-"id": "1afb8e69-3194-4e7e-be57-2478f19c49fd",
-
-"zIndex": 5,
-
-"data": {
-
-"type": "tm.Store",
-
-"name": "EC EBS Volumes",
-
-"description": "Persistent storage for containers",
-
-"outOfScope": false,
-
-"reasonOutOfScope": "",
-
-"isALog": false,
-
-"storesCredentials": false,
-
-"isEncrypted": false,
-
-"isSigned": false,
-
-"hasOpenThreats": false,
-
-"threats": []
-
-}
-
-},
-
-{
-
-"position": {
-
-"x": 1170,
-
-"y": 464.84374999999966
-
-},
-
-"size": {
-
-"width": 120,
-
-"height": 60
-
-},
-
-"attrs": {
-
-"text": {
-
-"text": "EC S3 buckets"
-
-},
-
-"topLine": {
-
-"strokeWidth": 1,
-
-"strokeDasharray": null
-
-},
-
-"bottomLine": {
-
-"strokeWidth": 1,
-
-"strokeDasharray": null
-
-}
-
-},
-
-"visible": true,
-
-"shape": "store",
-
-"id": "6da09832-3cdc-4eeb-9e51-ebbecdd5bc03",
-
-"zIndex": 6,
-
-"data": {
-
-"type": "tm.Store",
-
-"name": "EC S3 buckets",
-
-"description": "TBC if needed",
-
-"outOfScope": false,
-
-"reasonOutOfScope": "",
-
-"isALog": false,
-
-"storesCredentials": false,
-
-"isEncrypted": false,
-
-"isSigned": false,
-
-"hasOpenThreats": false,
-
-"threats": []
-
-}
-
-},
-
-{
-
-"position": {
-
-"x": 1005,
-
-"y": 547.5000000000016
-
-},
-
-"size": {
-
-"width": 120,
-
-"height": 60
-
-},
-
-"attrs": {
-
-"text": {
-
-"text": "EC ALB"
-
-},
-
-"topLine": {
-
-"strokeWidth": 1,
-
-"strokeDasharray": null
-
-},
-
-"bottomLine": {
-
-"strokeWidth": 1,
-
-"strokeDasharray": null
-
-}
-
-},
-
-"visible": true,
-
-"shape": "store",
-
-"id": "b69ab1cc-5250-44e8-92b3-82c4d384dbac",
-
-"zIndex": 7,
-
-"data": {
-
-"type": "tm.Store",
-
-"name": "EC ALB",
-
-"description": "EC Application Load balancers",
-
-"outOfScope": false,
-
-"reasonOutOfScope": "",
-
-"isALog": false,
-
-"storesCredentials": false,
-
-"isEncrypted": false,
-
-"isSigned": false,
-
-"hasOpenThreats": false,
-
-"threats": []
-
-}
-
-},
-
-{
-
-"position": {
-
-"x": 1170,
-
-"y": 547.5000000000016
-
-},
-
-"size": {
-
-"width": 120,
-
-"height": 60
-
-},
-
-"attrs": {
-
-"text": {
-
-"text": "EC Route53"
-
-},
-
-"topLine": {
-
-"strokeWidth": 1,
-
-"strokeDasharray": null
-
-},
-
-"bottomLine": {
-
-"strokeWidth": 1,
-
-"strokeDasharray": null
-
-}
-
-},
-
-"visible": true,
-
-"shape": "store",
-
-"id": "35593305-de2f-4b57-9f9e-4c122651c270",
-
-"zIndex": 8,
-
-"data": {
-
-"type": "tm.Store",
-
-"name": "EC Route53",
-
-"description": "DNS entries for EC",
-
-"outOfScope": false,
-
-"reasonOutOfScope": "",
-
-"isALog": false,
-
-"storesCredentials": false,
-
-"isEncrypted": false,
-
-"isSigned": false,
-
-"hasOpenThreats": false,
-
-"threats": []
-
-}
-
-},
-
-{
-
-"position": {
-
-"x": 1005,
-
-"y": 461.40624999999943
-
-},
-
-"size": {
-
-"width": 120,
-
-"height": 60
-
-},
-
-"attrs": {
-
-"text": {
-
-"text": "EC Security Groups"
-
-},
-
-"topLine": {
-
-"strokeWidth": 1,
-
-"strokeDasharray": null
-
-},
-
-"bottomLine": {
-
-"strokeWidth": 1,
-
-"strokeDasharray": null
-
-}
-
-},
-
-"visible": true,
-
-"shape": "store",
-
-"id": "be3fac53-2c21-4fd8-8fe3-667c8a7d1d9b",
-
-"zIndex": 9,
-
-"data": {
-
-"type": "tm.Store",
-
-"name": "EC Security Groups",
-
-"description": "AWS security groups for EC",
-
-"outOfScope": false,
-
-"reasonOutOfScope": "",
-
-"isALog": false,
-
-"storesCredentials": false,
-
-"isEncrypted": false,
-
-"isSigned": false,
-
-"hasOpenThreats": false,
-
-"threats": []
-
-}
-
-},
-
-{
-
-"position": {
-
-"x": 565.0000000000005,
-
-"y": 364.8437499999993
-
-},
-
-"size": {
-
-"width": 120,
-
-"height": 60
-
-},
-
-"attrs": {
-
-"text": {
-
-"text": "EC application logs"
-
-},
-
-"topLine": {
-
-"strokeWidth": 1,
-
-"strokeDasharray": null
-
-},
-
-"bottomLine": {
-
-"strokeWidth": 1,
-
-"strokeDasharray": null
-
-}
-
-},
-
-"visible": true,
-
-"shape": "store",
-
-"id": "209757d2-dc8a-49eb-bd91-bc6aa8859712",
-
-"zIndex": 10,
-
-"data": {
-
-"type": "tm.Store",
-
-"name": "EC application logs",
-
-"description": "",
-
-"outOfScope": false,
-
-"reasonOutOfScope": "",
-
-"isALog": false,
-
-"storesCredentials": false,
-
-"isEncrypted": false,
-
-"isSigned": false,
-
-"hasOpenThreats": false,
-
-"threats": []
-
-}
-
-},
-
-{
-
-"shape": "flow",
-
-"attrs": {
-
-"line": {
-
-"stroke": "#333333",
-
-"strokeWidth": 1,
-
-"targetMarker": {
-
-"name": "classic"
-
-},
-
-"strokeDasharray": null
-
-}
-
-},
-
-"width": 200,
-
-"height": 100,
-
-"zIndex": 10,
-
-"connector": "smooth",
-
-"data": {
-
-"type": "tm.Flow",
-
-"name": "EC app to db",
-
-"description": "EC application to database flows",
-
-"outOfScope": false,
-
-"reasonOutOfScope": "",
-
-"protocol": "HTTPS",
-
-"isEncrypted": true,
-
-"isPublicNetwork": false,
-
-"hasOpenThreats": false,
-
-"threats": []
-
-},
-
-"id": "5f07535e-722c-46db-ba53-304ccb1f183c",
-
-"source": {
-
-"cell": "99257602-6c1f-4b81-b1a0-b23b925ab861"
-
-},
-
-"target": {
-
-"cell": "af9fa3e6-cc15-4905-9c9f-e627f46326c0"
-
-},
-
-"vertices": [
-
-{
-
-"x": 620,
-
-"y": 190
-
-}
-
-],
-
-"labels": [
-
-"EC app to db"
-
-]
-
-},
-
-{
-
-"shape": "flow",
-
-"attrs": {
-
-"line": {
-
-"stroke": "#333333",
-
-"strokeWidth": 1,
-
-"targetMarker": {
-
-"name": "classic"
-
-},
-
-"strokeDasharray": null
-
-}
-
-},
-
-"width": 200,
-
-"height": 100,
-
-"zIndex": 10,
-
-"connector": "smooth",
-
-"data": {
-
-"type": "tm.Flow",
-
-"name": "EC application to keycloak",
-
-"description": "Enable login to the EC application via Azure AD",
-
-"outOfScope": false,
-
-"reasonOutOfScope": "",
-
-"protocol": "HTTPS",
-
-"isEncrypted": true,
-
-"isPublicNetwork": false,
-
-"hasOpenThreats": false,
-
-"threats": []
-
-},
-
-"id": "06975c06-4eb4-4f2d-b2b9-29dd7f343311",
-
-"source": {
-
-"cell": "99257602-6c1f-4b81-b1a0-b23b925ab861"
-
-},
-
-"target": {
-
-"cell": "c4c57190-5a9b-4aee-9913-1b07fc02fc6d"
-
-},
-
-"vertices": [
-
-{
-
-"x": 210,
-
-"y": 430
-
-},
-
-{
-
-"x": 210,
-
-"y": 650
-
-}
-
-],
-
-"labels": [
-
-"EC application to keycloak"
-
-]
-
-},
-
-{
-
-"shape": "flow",
-
-"attrs": {
-
-"line": {
-
-"stroke": "#333333",
-
-"strokeWidth": 1,
-
-"targetMarker": {
-
-"name": "classic"
-
-},
-
-"strokeDasharray": null
-
-}
-
-},
-
-"width": 200,
-
-"height": 100,
-
-"zIndex": 10,
-
-"connector": "smooth",
-
-"data": {
-
-"type": "tm.Flow",
-
-"name": "Keycloak to Azure AD",
-
-"description": "Allow users to login using their Azure AD credentials to EC",
-
-"outOfScope": false,
-
-"reasonOutOfScope": "",
-
-"protocol": "HTTPS",
-
-"isEncrypted": true,
-
-"isPublicNetwork": false,
-
-"hasOpenThreats": false,
-
-"threats": []
-
-},
-
-"id": "3fdf1e84-ff29-4cb1-a463-5fbf48725706",
-
-"source": {
-
-"cell": "c4c57190-5a9b-4aee-9913-1b07fc02fc6d"
-
-},
-
-"target": {
-
-"cell": "aac29b98-6bb7-4503-82f4-74ee78977717"
-
-},
-
-"vertices": [
-
-{
-
-"x": 130,
-
-"y": 1100
-
-}
-
-],
-
-"labels": [
-
-"Keycloak to Azure AD"
-
-]
-
-},
-
-{
-
-"position": {
-
-"x": 1125,
-
-"y": 304.8437499999993
-
-},
-
-"size": {
-
-"width": 120,
-
-"height": 60
-
-},
-
-"attrs": {
-
-"text": {
-
-"text": "EC DB logs"
-
-},
-
-"topLine": {
-
-"strokeWidth": 1,
-
-"strokeDasharray": null
-
-},
-
-"bottomLine": {
-
-"strokeWidth": 1,
-
-"strokeDasharray": null
-
-}
-
-},
-
-"visible": true,
-
-"shape": "store",
-
-"id": "d8ba1a85-b1fa-45e9-882a-9d754a749389",
-
-"zIndex": 11,
-
-"data": {
-
-"type": "tm.Store",
-
-"name": "EC DB logs",
-
-"description": "EC logs",
-
-"outOfScope": false,
-
-"reasonOutOfScope": "",
-
-"isALog": true,
-
-"storesCredentials": false,
-
-"isEncrypted": true,
-
-"isSigned": false,
-
-"hasOpenThreats": false,
-
-"threats": []
-
-}
-
-},
-
-{
-
-"position": {
-
-"x": 350.0000000000001,
-
-"y": 914
-
-},
-
-"size": {
-
-"width": 120,
-
-"height": 60
-
-},
-
-"attrs": {
-
-"text": {
-
-"text": "Keycloak application"
-
-},
-
-"topLine": {
-
-"strokeWidth": 1,
-
-"strokeDasharray": null
-
-},
-
-"bottomLine": {
-
-"strokeWidth": 1,
-
-"strokeDasharray": null
-
-}
-
-},
-
-"visible": true,
-
-"shape": "store",
-
-"id": "c4c57190-5a9b-4aee-9913-1b07fc02fc6d",
-
-"zIndex": 12,
-
-"data": {
-
-"type": "tm.Store",
-
-"name": "Keycloak application",
-
-"description": "Provides SSO integration for EC",
-
-"outOfScope": false,
-
-"reasonOutOfScope": "",
-
-"isALog": false,
-
-"storesCredentials": false,
-
-"isEncrypted": false,
-
-"isSigned": false,
-
-"hasOpenThreats": false,
-
-"threats": []
-
-}
-
-},
-
-{
-
-"position": {
-
-"x": 529.999999999999,
-
-"y": 914
-
-},
-
-"size": {
-
-"width": 120,
-
-"height": 60
-
-},
-
-"attrs": {
-
-"text": {
-
-"text": "Keycloak servers"
-
-},
-
-"topLine": {
-
-"strokeWidth": 1,
-
-"strokeDasharray": null
-
-},
-
-"bottomLine": {
-
-"strokeWidth": 1,
-
-"strokeDasharray": null
-
-}
-
-},
-
-"visible": true,
-
-"shape": "store",
-
-"id": "0e9a152b-0661-4ee9-a84d-f891fda094e2",
-
-"zIndex": 13,
-
-"data": {
-
-"type": "tm.Store",
-
-"name": "Keycloak servers",
-
-"description": "Virtual machines to host keycloak",
-
-"outOfScope": false,
-
-"reasonOutOfScope": "",
-
-"isALog": false,
-
-"storesCredentials": false,
-
-"isEncrypted": false,
-
-"isSigned": false,
-
-"hasOpenThreats": false,
-
-"threats": []
-
-}
-
-},
-
-{
-
-"position": {
-
-"x": 350.0000000000001,
-
-"y": 990
-
-},
-
-"size": {
-
-"width": 120,
-
-"height": 60
-
-},
-
-"attrs": {
-
-"text": {
-
-"text": "Keycloak storage"
-
-},
-
-"topLine": {
-
-"strokeWidth": 1,
-
-"strokeDasharray": null
-
-},
-
-"bottomLine": {
-
-"strokeWidth": 1,
-
-"strokeDasharray": null
-
-}
-
-},
-
-"visible": true,
-
-"shape": "store",
-
-"id": "46ca23b5-42ff-48e7-ae6b-0d5e6c82d0b9",
-
-"zIndex": 14,
-
-"data": {
-
-"type": "tm.Store",
-
-"name": "Keycloak storage",
-
-"description": "EBS volumes, S3 etc.",
-
-"outOfScope": false,
-
-"reasonOutOfScope": "",
-
-"isALog": false,
-
-"storesCredentials": false,
-
-"isEncrypted": false,
-
-"isSigned": false,
-
-"hasOpenThreats": false,
-
-"threats": []
-
-}
-
-},
-
-{
-
-"position": {
-
-"x": 529.999999999999,
-
-"y": 990
-
-},
-
-"size": {
-
-"width": 120,
-
-"height": 60
-
-},
-
-"attrs": {
-
-"text": {
-
-"text": "Keycloak database"
-
-},
-
-"topLine": {
-
-"strokeWidth": 1,
-
-"strokeDasharray": null
-
-},
-
-"bottomLine": {
-
-"strokeWidth": 1,
-
-"strokeDasharray": null
-
-}
-
-},
-
-"visible": true,
-
-"shape": "store",
-
-"id": "8811c2fc-9f9c-4320-8d6c-9243baf61e4d",
-
-"zIndex": 15,
-
-"data": {
-
-"type": "tm.Store",
-
-"name": "Keycloak database",
-
-"description": "",
-
-"outOfScope": false,
-
-"reasonOutOfScope": "",
-
-"isALog": false,
-
-"storesCredentials": false,
-
-"isEncrypted": false,
-
-"isSigned": false,
-
-"hasOpenThreats": false,
-
-"threats": []
-
-}
-
-},
-
-{
-
-"position": {
-
-"x": 685,
-
-"y": 30
-
-},
-
-"size": {
-
-"width": 120,
-
-"height": 60
-
-},
-
-"attrs": {
-
-"text": {
-
-"text": "GSP Azure Subscription"
-
-},
-
-"topLine": {
-
-"strokeWidth": 1,
-
-"strokeDasharray": null
-
-},
-
-"bottomLine": {
-
-"strokeWidth": 1,
-
-"strokeDasharray": null
-
-}
-
-},
-
-"visible": true,
-
-"shape": "store",
-
-"id": "a1b5dacd-98d8-4529-82e7-678d22db83cb",
-
-"zIndex": 16,
-
-"data": {
-
-"type": "tm.Store",
-
-"name": "GSP Azure Subscription",
-
-"description": "New critical division Azure subscription",
-
-"outOfScope": false,
-
-"reasonOutOfScope": "",
-
-"isALog": false,
-
-"storesCredentials": false,
-
-"isEncrypted": false,
-
-"isSigned": false,
-
-"hasOpenThreats": false,
-
-"threats": []
-
-}
-
-},
-
-{
-
-"position": {
-
-"x": 289.9999999999995,
-
-"y": 1238
-
-},
-
-"size": {
-
-"width": 120,
-
-"height": 60
-
-},
-
-"attrs": {
-
-"text": {
-
-"text": "APA Staff Azure AD"
-
-},
-
-"topLine": {
-
-"strokeWidth": 1,
-
-"strokeDasharray": null
-
-},
-
-"bottomLine": {
-
-"strokeWidth": 1,
-
-"strokeDasharray": null
-
-}
-
-},
-
-"visible": true,
-
-"shape": "store",
-
-"id": "aac29b98-6bb7-4503-82f4-74ee78977717",
-
-"zIndex": 17,
-
-"data": {
-
-"type": "tm.Store",
-
-"name": "APA Staff Azure AD",
-
-"description": "APA Azure AD used for staff and third party logins (not customers)",
-
-"outOfScope": false,
-
-"reasonOutOfScope": "",
-
-"isALog": false,
-
-"storesCredentials": true,
-
-"isEncrypted": true,
-
-"isSigned": false,
-
-"hasOpenThreats": false,
-
-"threats": []
-
-}
-
-},
-
-{
-
-"position": {
-
-"x": 350.0000000000001,
-
-"y": 1074
-
-},
-
-"size": {
-
-"width": 120,
-
-"height": 60
-
-},
-
-"attrs": {
-
-"text": {
-
-"text": "Keycloak Security Groups"
-
-},
-
-"topLine": {
-
-"strokeWidth": 1,
-
-"strokeDasharray": null
-
-},
-
-"bottomLine": {
-
-"strokeWidth": 1,
-
-"strokeDasharray": null
-
-}
-
-},
-
-"visible": true,
-
-"shape": "store",
-
-"id": "202da8ea-a62b-47ec-a6f6-6f52ad14315d",
-
-"zIndex": 18,
-
-"data": {
-
-"type": "tm.Store",
-
-"name": "Keycloak Security Groups",
-
-"description": "",
-
-"outOfScope": false,
-
-"reasonOutOfScope": "",
-
-"isALog": false,
-
-"storesCredentials": false,
-
-"isEncrypted": false,
-
-"isSigned": false,
-
-"hasOpenThreats": false,
-
-"threats": []
-
-}
-
-},
-
-{
-
-"position": {
-
-"x": 529.999999999999,
-
-"y": 1074
-
-},
-
-"size": {
-
-"width": 120,
-
-"height": 60
-
-},
-
-"attrs": {
-
-"text": {
-
-"text": "Keycloak ALB"
-
-},
-
-"topLine": {
-
-"strokeWidth": 1,
-
-"strokeDasharray": null
-
-},
-
-"bottomLine": {
-
-"strokeWidth": 1,
-
-"strokeDasharray": null
-
-}
-
-},
-
-"visible": true,
-
-"shape": "store",
-
-"id": "7a530200-b980-4d9e-a07f-63444b800cd0",
-
-"zIndex": 19,
-
-"data": {
-
-"type": "tm.Store",
-
-"name": "Keycloak ALB",
-
-"description": "",
-
-"outOfScope": false,
-
-"reasonOutOfScope": "",
-
-"isALog": false,
-
-"storesCredentials": false,
-
-"isEncrypted": false,
-
-"isSigned": false,
-
-"hasOpenThreats": false,
-
-"threats": []
-
-}
-
-},
-
-{
-
-"position": {
-
-"x": 1319,
-
-"y": 465
-
-},
-
-"size": {
-
-"width": 120,
-
-"height": 60
-
-},
-
-"attrs": {
-
-"text": {
-
-"text": "EC IAM policies"
-
-},
-
-"topLine": {
-
-"strokeWidth": 1,
-
-"strokeDasharray": null
-
-},
-
-"bottomLine": {
-
-"strokeWidth": 1,
-
-"strokeDasharray": null
-
-}
-
-},
-
-"visible": true,
-
-"shape": "store",
-
-"id": "40b43daf-45b6-486f-b427-bb539670544a",
-
-"zIndex": 20,
-
-"data": {
-
-"type": "tm.Store",
-
-"name": "EC IAM policies",
-
-"description": "",
-
-"outOfScope": false,
-
-"reasonOutOfScope": "",
-
-"isALog": false,
-
-"storesCredentials": false,
-
-"isEncrypted": false,
-
-"isSigned": false,
-
-"hasOpenThreats": false,
-
-"threats": []
-
-}
-
-},
-
-{
-
-"position": {
-
-"x": 685,
-
-"y": 914
-
-},
-
-"size": {
-
-"width": 120,
-
-"height": 60
-
-},
-
-"attrs": {
-
-"text": {
-
-"text": "Keycloak IAM policies"
-
-},
-
-"topLine": {
-
-"strokeWidth": 1,
-
-"strokeDasharray": null
-
-},
-
-"bottomLine": {
-
-"strokeWidth": 1,
-
-"strokeDasharray": null
-
-}
-
-},
-
-"visible": true,
-
-"shape": "store",
-
-"id": "c41b677a-e916-47e0-a276-51f1822f60e5",
-
-"zIndex": 21,
-
-"data": {
-
-"type": "tm.Store",
-
-"name": "Keycloak IAM policies",
-
-"description": "",
-
-"outOfScope": false,
-
-"reasonOutOfScope": "",
-
-"isALog": false,
-
-"storesCredentials": false,
-
-"isEncrypted": false,
-
-"isSigned": false,
-
-"hasOpenThreats": false,
-
-"threats": []
-
-}
-
-}
-
-]
-
-}
-
-],
-
-"diagramTop": 1,
-
-"reviewer": "Kelly Chan",
-
-"threatTop": 0
-
-}
-
+  "version": "2.0.3",
+  "summary": {
+    "title": "GSP Cyber Security Threat Model",
+    "owner": "Rakkhi Samarasekera",
+    "description": "https://apamscloud.sharepoint.com/sites/GridServicesFramework-InformationTechnology-TechnologyWorkstream-APAonly/Shared%20Documents/Technology%20Workstream%20-%20APA%20hires%20only/Architecture/GSP%20Future%20State%20Concept%20Architecture(for%20feedback).pptx?d=w4e302fcbc43541449b89044512b7279a&nav=eyJzSWQiOjI1NywiY0lkIjo3ODIwMjMzNjgsImNvbW1lbnRJZCI6IjczRThERjRDLTBDRTktNERGRC04Q0JCLURGODExMkZEQzM1QiJ9&ne=ew0KICAidnQiOiB7DQogICAgImIiOiA1ODk4DQogIH0NCn0&e=F9wouMg2U0iGAdz-nphubA&at=16",
+    "id": 0
+  },
+  "detail": {
+    "contributors": [],
+    "diagrams": [
+      {
+        "id": 0,
+        "title": "GSP Cyber Security Threat Model STRIDE",
+        "diagramType": "STRIDE",
+        "placeholder": "New STRIDE diagram description",
+        "thumbnail": "./public/content/images/thumbnail.stride.jpg",
+        "version": "2.0.3",
+        "description": "Stride framework to perform threat model of GSP",
+        "cells": [
+          {
+            "position": {
+              "x": 289.9999999999998,
+              "y": 177.03125000000063
+            },
+            "size": {
+              "width": 1237.3333333333328,
+              "height": 580
+            },
+            "shape": "trust-boundary-box",
+            "attrs": {
+              "headerText": {
+                "text": "Energy Components System"
+              }
+            },
+            "zIndex": -1,
+            "id": "ccdc2c29-a7d0-46d3-983a-6000bdf27a27",
+            "data": {
+              "type": "tm.BoundaryBox",
+              "name": "Energy Components System",
+              "description": "All application and infrastructure components that make up Energy Components (EC). Gas accounting, contract record, gas nomination and invoicing system for APA",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            }
+          },
+          {
+            "position": {
+              "x": 335.0000000000002,
+              "y": 248.28124999999966
+            },
+            "size": {
+              "width": 590,
+              "height": 276.5625
+            },
+            "shape": "trust-boundary-box",
+            "attrs": {
+              "headerText": {
+                "text": "EC Application"
+              }
+            },
+            "id": "b1e1a6b5-c283-4ce2-b180-7742c45c0410",
+            "zIndex": -1,
+            "data": {
+              "type": "tm.BoundaryBox",
+              "name": "EC Application",
+              "description": "EC application layer",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            }
+          },
+          {
+            "position": {
+              "x": 960,
+              "y": 248.28124999999966
+            },
+            "size": {
+              "width": 310,
+              "height": 145.3125
+            },
+            "shape": "trust-boundary-box",
+            "attrs": {
+              "headerText": {
+                "text": "EC data layer"
+              }
+            },
+            "id": "8be5e768-748f-4848-9286-4b1a4a856e6c",
+            "zIndex": -1,
+            "data": {
+              "type": "tm.BoundaryBox",
+              "name": "EC data layer",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            }
+          },
+          {
+            "position": {
+              "x": 959.9999999999998,
+              "y": 424.84374999999966
+            },
+            "size": {
+              "width": 520,
+              "height": 243.75
+            },
+            "shape": "trust-boundary-box",
+            "attrs": {
+              "headerText": {
+                "text": "EC AWS Native Components"
+              }
+            },
+            "id": "b6b24bb6-0d7d-4d94-bbe5-992b65de0317",
+            "zIndex": -1,
+            "data": {
+              "type": "tm.BoundaryBox",
+              "name": "EC AWS Native Components",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            }
+          },
+          {
+            "position": {
+              "x": 289.999999999999,
+              "y": 870.0000000000039
+            },
+            "size": {
+              "width": 600,
+              "height": 281.25
+            },
+            "shape": "trust-boundary-box",
+            "attrs": {
+              "headerText": {
+                "text": "Keycloak components"
+              }
+            },
+            "id": "a9a7833f-81d1-4387-a0fc-375c8e608b4c",
+            "zIndex": -1,
+            "data": {
+              "type": "tm.BoundaryBox",
+              "name": "Keycloak components",
+              "description": "Open source component providing integration with Azure AD for EC",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            }
+          },
+          {
+            "position": {
+              "x": 289.9999999999998,
+              "y": -30.624999999998863
+            },
+            "size": {
+              "width": 300,
+              "height": 140.62499999999997
+            },
+            "shape": "trust-boundary-box",
+            "attrs": {
+              "headerText": {
+                "text": "APA AWS Organization"
+              }
+            },
+            "id": "ef2749f3-a694-4969-baa0-2542e9f2af90",
+            "zIndex": -1,
+            "data": {
+              "type": "tm.BoundaryBox",
+              "name": "APA AWS Organization",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            }
+          },
+          {
+            "position": {
+              "x": 657.9999999999999,
+              "y": -29.999999999999176
+            },
+            "size": {
+              "width": 300,
+              "height": 140.625
+            },
+            "shape": "trust-boundary-box",
+            "attrs": {
+              "headerText": {
+                "text": "APA Azure Subscriptions"
+              }
+            },
+            "id": "a6d9475a-0529-4e88-8a09-66b9ba9ade5a",
+            "zIndex": -1,
+            "data": {
+              "type": "tm.BoundaryBox",
+              "name": "APA Azure Subscriptions",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            }
+          },
+          {
+            "position": {
+              "x": 383.00000000000045,
+              "y": 284.8437499999993
+            },
+            "size": {
+              "width": 120,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "EC Application"
+              },
+              "topLine": {
+                "strokeWidth": 1,
+                "strokeDasharray": null
+              },
+              "bottomLine": {
+                "strokeWidth": 1,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "store",
+            "id": "99257602-6c1f-4b81-b1a0-b23b925ab861",
+            "zIndex": 0,
+            "data": {
+              "type": "tm.Store",
+              "name": "EC Application",
+              "description": "The actual EC application",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "isALog": false,
+              "storesCredentials": false,
+              "isEncrypted": false,
+              "isSigned": false,
+              "hasOpenThreats": false,
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 383.00000000000045,
+              "y": 364.8437499999993
+            },
+            "size": {
+              "width": 120,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "EC Containers"
+              },
+              "topLine": {
+                "strokeWidth": 1,
+                "strokeDasharray": null
+              },
+              "bottomLine": {
+                "strokeWidth": 1,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "store",
+            "id": "e181480c-4bac-412a-954b-e79475bc400a",
+            "zIndex": 1,
+            "data": {
+              "type": "tm.Store",
+              "name": "EC Containers",
+              "description": "Application servers containers",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "isALog": false,
+              "storesCredentials": false,
+              "isEncrypted": false,
+              "isSigned": false,
+              "hasOpenThreats": false,
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 383.00000000000045,
+              "y": 444.8437499999993
+            },
+            "size": {
+              "width": 120,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "EC K8s"
+              },
+              "topLine": {
+                "strokeWidth": 1,
+                "strokeDasharray": null
+              },
+              "bottomLine": {
+                "strokeWidth": 1,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "store",
+            "id": "93d6ce30-7459-4cb6-9ed0-dae3b848022f",
+            "zIndex": 2,
+            "data": {
+              "type": "tm.Store",
+              "name": "EC K8s",
+              "description": "EC Kubernetes cluster for hosting containers for EC application",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "isALog": false,
+              "storesCredentials": false,
+              "isEncrypted": false,
+              "isSigned": false,
+              "hasOpenThreats": false,
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 314.99999999999966,
+              "y": 30
+            },
+            "size": {
+              "width": 120,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "GSP AWS Accounts"
+              },
+              "topLine": {
+                "strokeWidth": 1,
+                "strokeDasharray": null
+              },
+              "bottomLine": {
+                "strokeWidth": 1,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "store",
+            "id": "e3c26ee8-46b4-4387-ae7a-29d99925d3ef",
+            "zIndex": 3,
+            "data": {
+              "type": "tm.Store",
+              "name": "GSP AWS Accounts",
+              "description": "AWS accounts hosting all GSP components",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "isALog": false,
+              "storesCredentials": false,
+              "isEncrypted": false,
+              "isSigned": false,
+              "hasOpenThreats": false,
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 990,
+              "y": 304.8437499999993
+            },
+            "size": {
+              "width": 120,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "EC RDS DB"
+              },
+              "topLine": {
+                "strokeWidth": 1,
+                "strokeDasharray": null
+              },
+              "bottomLine": {
+                "strokeWidth": 1,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "store",
+            "id": "af9fa3e6-cc15-4905-9c9f-e627f46326c0",
+            "zIndex": 4,
+            "data": {
+              "type": "tm.Store",
+              "name": "EC RDS DB",
+              "description": "EC Oracle RDS database. EC data layer",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "isALog": false,
+              "storesCredentials": true,
+              "isEncrypted": true,
+              "isSigned": false,
+              "hasOpenThreats": false,
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 565.0000000000005,
+              "y": 284.8437499999993
+            },
+            "size": {
+              "width": 120,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "EC EBS Volumes"
+              },
+              "topLine": {
+                "strokeWidth": 1,
+                "strokeDasharray": null
+              },
+              "bottomLine": {
+                "strokeWidth": 1,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "store",
+            "id": "1afb8e69-3194-4e7e-be57-2478f19c49fd",
+            "zIndex": 5,
+            "data": {
+              "type": "tm.Store",
+              "name": "EC EBS Volumes",
+              "description": "Persistent storage for containers",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "isALog": false,
+              "storesCredentials": false,
+              "isEncrypted": false,
+              "isSigned": false,
+              "hasOpenThreats": false,
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 1170,
+              "y": 464.84374999999966
+            },
+            "size": {
+              "width": 120,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "EC S3 buckets"
+              },
+              "topLine": {
+                "strokeWidth": 1,
+                "strokeDasharray": null
+              },
+              "bottomLine": {
+                "strokeWidth": 1,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "store",
+            "id": "6da09832-3cdc-4eeb-9e51-ebbecdd5bc03",
+            "zIndex": 6,
+            "data": {
+              "type": "tm.Store",
+              "name": "EC S3 buckets",
+              "description": "TBC if needed",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "isALog": false,
+              "storesCredentials": false,
+              "isEncrypted": false,
+              "isSigned": false,
+              "hasOpenThreats": false,
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 1005,
+              "y": 547.5000000000016
+            },
+            "size": {
+              "width": 120,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "EC ALB"
+              },
+              "topLine": {
+                "strokeWidth": 1,
+                "strokeDasharray": null
+              },
+              "bottomLine": {
+                "strokeWidth": 1,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "store",
+            "id": "b69ab1cc-5250-44e8-92b3-82c4d384dbac",
+            "zIndex": 7,
+            "data": {
+              "type": "tm.Store",
+              "name": "EC ALB",
+              "description": "EC Application Load balancers",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "isALog": false,
+              "storesCredentials": false,
+              "isEncrypted": false,
+              "isSigned": false,
+              "hasOpenThreats": false,
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 1170,
+              "y": 547.5000000000016
+            },
+            "size": {
+              "width": 120,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "EC Route53"
+              },
+              "topLine": {
+                "strokeWidth": 1,
+                "strokeDasharray": null
+              },
+              "bottomLine": {
+                "strokeWidth": 1,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "store",
+            "id": "35593305-de2f-4b57-9f9e-4c122651c270",
+            "zIndex": 8,
+            "data": {
+              "type": "tm.Store",
+              "name": "EC Route53",
+              "description": "DNS entries for EC",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "isALog": false,
+              "storesCredentials": false,
+              "isEncrypted": false,
+              "isSigned": false,
+              "hasOpenThreats": false,
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 1005,
+              "y": 461.40624999999943
+            },
+            "size": {
+              "width": 120,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "EC Security Groups"
+              },
+              "topLine": {
+                "strokeWidth": 1,
+                "strokeDasharray": null
+              },
+              "bottomLine": {
+                "strokeWidth": 1,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "store",
+            "id": "be3fac53-2c21-4fd8-8fe3-667c8a7d1d9b",
+            "zIndex": 9,
+            "data": {
+              "type": "tm.Store",
+              "name": "EC Security Groups",
+              "description": "AWS security groups for EC",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "isALog": false,
+              "storesCredentials": false,
+              "isEncrypted": false,
+              "isSigned": false,
+              "hasOpenThreats": false,
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 565.0000000000005,
+              "y": 364.8437499999993
+            },
+            "size": {
+              "width": 120,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "EC application logs"
+              },
+              "topLine": {
+                "strokeWidth": 1,
+                "strokeDasharray": null
+              },
+              "bottomLine": {
+                "strokeWidth": 1,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "store",
+            "id": "209757d2-dc8a-49eb-bd91-bc6aa8859712",
+            "zIndex": 10,
+            "data": {
+              "type": "tm.Store",
+              "name": "EC application logs",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "isALog": false,
+              "storesCredentials": false,
+              "isEncrypted": false,
+              "isSigned": false,
+              "hasOpenThreats": false,
+              "threats": []
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "strokeWidth": 1,
+                "targetMarker": {
+                  "name": "classic"
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "EC app to db",
+              "description": "EC application to database flows",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "protocol": "HTTPS",
+              "isEncrypted": true,
+              "isPublicNetwork": false,
+              "hasOpenThreats": false,
+              "threats": []
+            },
+            "id": "5f07535e-722c-46db-ba53-304ccb1f183c",
+            "source": {
+              "cell": "99257602-6c1f-4b81-b1a0-b23b925ab861"
+            },
+            "target": {
+              "cell": "af9fa3e6-cc15-4905-9c9f-e627f46326c0"
+            },
+            "vertices": [
+              {
+                "x": 620,
+                "y": 190
+              }
+            ],
+            "labels": [
+              "EC app to db"
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "strokeWidth": 1,
+                "targetMarker": {
+                  "name": "classic"
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "EC application to keycloak",
+              "description": "Enable login to the EC application via Azure AD",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "protocol": "HTTPS",
+              "isEncrypted": true,
+              "isPublicNetwork": false,
+              "hasOpenThreats": false,
+              "threats": []
+            },
+            "id": "06975c06-4eb4-4f2d-b2b9-29dd7f343311",
+            "source": {
+              "cell": "99257602-6c1f-4b81-b1a0-b23b925ab861"
+            },
+            "target": {
+              "cell": "c4c57190-5a9b-4aee-9913-1b07fc02fc6d"
+            },
+            "vertices": [
+              {
+                "x": 210,
+                "y": 430
+              },
+              {
+                "x": 210,
+                "y": 650
+              }
+            ],
+            "labels": [
+              "EC application to keycloak"
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "strokeWidth": 1,
+                "targetMarker": {
+                  "name": "classic"
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Keycloak to Azure AD",
+              "description": "Allow users to login using their Azure AD credentials to EC",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "protocol": "HTTPS",
+              "isEncrypted": true,
+              "isPublicNetwork": false,
+              "hasOpenThreats": false,
+              "threats": []
+            },
+            "id": "3fdf1e84-ff29-4cb1-a463-5fbf48725706",
+            "source": {
+              "cell": "c4c57190-5a9b-4aee-9913-1b07fc02fc6d"
+            },
+            "target": {
+              "cell": "aac29b98-6bb7-4503-82f4-74ee78977717"
+            },
+            "vertices": [
+              {
+                "x": 130,
+                "y": 1100
+              }
+            ],
+            "labels": [
+              "Keycloak to Azure AD"
+            ]
+          },
+          {
+            "position": {
+              "x": 1125,
+              "y": 304.8437499999993
+            },
+            "size": {
+              "width": 120,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "EC DB logs"
+              },
+              "topLine": {
+                "strokeWidth": 1,
+                "strokeDasharray": null
+              },
+              "bottomLine": {
+                "strokeWidth": 1,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "store",
+            "id": "d8ba1a85-b1fa-45e9-882a-9d754a749389",
+            "zIndex": 11,
+            "data": {
+              "type": "tm.Store",
+              "name": "EC DB logs",
+              "description": "EC logs",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "isALog": true,
+              "storesCredentials": false,
+              "isEncrypted": true,
+              "isSigned": false,
+              "hasOpenThreats": false,
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 350.0000000000001,
+              "y": 914
+            },
+            "size": {
+              "width": 120,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Keycloak application"
+              },
+              "topLine": {
+                "strokeWidth": 1,
+                "strokeDasharray": null
+              },
+              "bottomLine": {
+                "strokeWidth": 1,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "store",
+            "id": "c4c57190-5a9b-4aee-9913-1b07fc02fc6d",
+            "zIndex": 12,
+            "data": {
+              "type": "tm.Store",
+              "name": "Keycloak application",
+              "description": "Provides SSO integration for EC",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "isALog": false,
+              "storesCredentials": false,
+              "isEncrypted": false,
+              "isSigned": false,
+              "hasOpenThreats": false,
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 529.999999999999,
+              "y": 914
+            },
+            "size": {
+              "width": 120,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Keycloak servers"
+              },
+              "topLine": {
+                "strokeWidth": 1,
+                "strokeDasharray": null
+              },
+              "bottomLine": {
+                "strokeWidth": 1,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "store",
+            "id": "0e9a152b-0661-4ee9-a84d-f891fda094e2",
+            "zIndex": 13,
+            "data": {
+              "type": "tm.Store",
+              "name": "Keycloak servers",
+              "description": "Virtual machines to host keycloak",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "isALog": false,
+              "storesCredentials": false,
+              "isEncrypted": false,
+              "isSigned": false,
+              "hasOpenThreats": false,
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 350.0000000000001,
+              "y": 990
+            },
+            "size": {
+              "width": 120,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Keycloak storage"
+              },
+              "topLine": {
+                "strokeWidth": 1,
+                "strokeDasharray": null
+              },
+              "bottomLine": {
+                "strokeWidth": 1,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "store",
+            "id": "46ca23b5-42ff-48e7-ae6b-0d5e6c82d0b9",
+            "zIndex": 14,
+            "data": {
+              "type": "tm.Store",
+              "name": "Keycloak storage",
+              "description": "EBS volumes, S3 etc.",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "isALog": false,
+              "storesCredentials": false,
+              "isEncrypted": false,
+              "isSigned": false,
+              "hasOpenThreats": false,
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 529.999999999999,
+              "y": 990
+            },
+            "size": {
+              "width": 120,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Keycloak database"
+              },
+              "topLine": {
+                "strokeWidth": 1,
+                "strokeDasharray": null
+              },
+              "bottomLine": {
+                "strokeWidth": 1,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "store",
+            "id": "8811c2fc-9f9c-4320-8d6c-9243baf61e4d",
+            "zIndex": 15,
+            "data": {
+              "type": "tm.Store",
+              "name": "Keycloak database",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "isALog": false,
+              "storesCredentials": false,
+              "isEncrypted": false,
+              "isSigned": false,
+              "hasOpenThreats": false,
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 685,
+              "y": 30
+            },
+            "size": {
+              "width": 120,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "GSP Azure Subscription"
+              },
+              "topLine": {
+                "strokeWidth": 1,
+                "strokeDasharray": null
+              },
+              "bottomLine": {
+                "strokeWidth": 1,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "store",
+            "id": "a1b5dacd-98d8-4529-82e7-678d22db83cb",
+            "zIndex": 16,
+            "data": {
+              "type": "tm.Store",
+              "name": "GSP Azure Subscription",
+              "description": "New critical division Azure subscription",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "isALog": false,
+              "storesCredentials": false,
+              "isEncrypted": false,
+              "isSigned": false,
+              "hasOpenThreats": false,
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 289.9999999999995,
+              "y": 1238
+            },
+            "size": {
+              "width": 120,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "APA Staff Azure AD"
+              },
+              "topLine": {
+                "strokeWidth": 1,
+                "strokeDasharray": null
+              },
+              "bottomLine": {
+                "strokeWidth": 1,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "store",
+            "id": "aac29b98-6bb7-4503-82f4-74ee78977717",
+            "zIndex": 17,
+            "data": {
+              "type": "tm.Store",
+              "name": "APA Staff Azure AD",
+              "description": "APA Azure AD used for staff and third party logins (not customers)",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "isALog": false,
+              "storesCredentials": true,
+              "isEncrypted": true,
+              "isSigned": false,
+              "hasOpenThreats": false,
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 350.0000000000001,
+              "y": 1074
+            },
+            "size": {
+              "width": 120,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Keycloak Security Groups"
+              },
+              "topLine": {
+                "strokeWidth": 1,
+                "strokeDasharray": null
+              },
+              "bottomLine": {
+                "strokeWidth": 1,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "store",
+            "id": "202da8ea-a62b-47ec-a6f6-6f52ad14315d",
+            "zIndex": 18,
+            "data": {
+              "type": "tm.Store",
+              "name": "Keycloak Security Groups",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "isALog": false,
+              "storesCredentials": false,
+              "isEncrypted": false,
+              "isSigned": false,
+              "hasOpenThreats": false,
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 529.999999999999,
+              "y": 1074
+            },
+            "size": {
+              "width": 120,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Keycloak ALB"
+              },
+              "topLine": {
+                "strokeWidth": 1,
+                "strokeDasharray": null
+              },
+              "bottomLine": {
+                "strokeWidth": 1,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "store",
+            "id": "7a530200-b980-4d9e-a07f-63444b800cd0",
+            "zIndex": 19,
+            "data": {
+              "type": "tm.Store",
+              "name": "Keycloak ALB",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "isALog": false,
+              "storesCredentials": false,
+              "isEncrypted": false,
+              "isSigned": false,
+              "hasOpenThreats": false,
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 1319,
+              "y": 465
+            },
+            "size": {
+              "width": 120,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "EC IAM policies"
+              },
+              "topLine": {
+                "strokeWidth": 1,
+                "strokeDasharray": null
+              },
+              "bottomLine": {
+                "strokeWidth": 1,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "store",
+            "id": "40b43daf-45b6-486f-b427-bb539670544a",
+            "zIndex": 20,
+            "data": {
+              "type": "tm.Store",
+              "name": "EC IAM policies",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "isALog": false,
+              "storesCredentials": false,
+              "isEncrypted": false,
+              "isSigned": false,
+              "hasOpenThreats": false,
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 685,
+              "y": 914
+            },
+            "size": {
+              "width": 120,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Keycloak IAM policies"
+              },
+              "topLine": {
+                "strokeWidth": 1,
+                "strokeDasharray": null
+              },
+              "bottomLine": {
+                "strokeWidth": 1,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "store",
+            "id": "c41b677a-e916-47e0-a276-51f1822f60e5",
+            "zIndex": 21,
+            "data": {
+              "type": "tm.Store",
+              "name": "Keycloak IAM policies",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "isALog": false,
+              "storesCredentials": false,
+              "isEncrypted": false,
+              "isSigned": false,
+              "hasOpenThreats": false,
+              "threats": []
+            }
+          }
+        ]
+      },
+      {
+        "id": 1,
+        "title": "New LINDDUN diagram",
+        "diagramType": "LINDDUN",
+        "placeholder": "New LINDDUN diagram description",
+        "thumbnail": "./public/content/images/thumbnail.linddun.jpg",
+        "version": "2.0.3",
+        "cells": []
+      }
+    ],
+    "diagramTop": 2,
+    "reviewer": "Kelly Chan",
+    "threatTop": 4
+  }
 }
